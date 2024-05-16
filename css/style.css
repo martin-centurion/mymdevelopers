@@ -74,6 +74,23 @@ body {
       background: #252830;
       border-color: #363b45; }
 
+      .whatsapp-icono {
+        position: fixed;
+        bottom: 130px;
+        right: 120px;
+        font-size: 40px;
+      z-index: 9999; }
+        .whatsapp-icono a {
+          color: white;
+          background-color: #1dd639;
+          text-decoration: none;
+          border-radius: 50%;
+          padding: 10px 24px;
+          transition: all 0.5s; }
+          .whatsapp-icono a:hover {
+            color: #1dd639;
+            background-color: white; }
+
 .main-content {
   background: #0c0f16;
   position: relative;
@@ -898,9 +915,18 @@ body {
   height: 6px;
   z-index: 10000001;
   background-color: #75dab4;
-  -webkit-transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out, opacity .3s ease-in-out;
-  -o-transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out, opacity .3s ease-in-out;
-  transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out, opacity .3s ease-in-out; }
+  -webkit-transition: width .3s ease-in-out,
+ height .3s ease-in-out,
+ margin .3s ease-in-out,
+ opacity .3s ease-in-out;
+  -o-transition: width .3s ease-in-out,
+ height .3s ease-in-out,
+ margin .3s ease-in-out,
+ opacity .3s ease-in-out;
+  transition: width .3s ease-in-out,
+ height .3s ease-in-out,
+ margin .3s ease-in-out,
+ opacity .3s ease-in-out; }
 
 .cursor-inner.cursor-hover {
   margin-left: -40px;
@@ -1737,9 +1763,12 @@ body {
       color: #fff;
       opacity: 0;
       visibility: hidden;
-      -webkit-transition: opacity .5s, visibility .5s;
-      -o-transition: opacity .5s, visibility .5s;
-      transition: opacity .5s, visibility .5s; }
+      -webkit-transition: opacity .5s,
+ visibility .5s;
+      -o-transition: opacity .5s,
+ visibility .5s;
+      transition: opacity .5s,
+ visibility .5s; }
     .slider .parallax-slider .caption p {
       color: #eee;
       margin-top: 15px;
@@ -2026,9 +2055,12 @@ header.simpl {
       color: #fff;
       opacity: 0;
       visibility: hidden;
-      -webkit-transition: opacity .5s, visibility .5s;
-      -o-transition: opacity .5s, visibility .5s;
-      transition: opacity .5s, visibility .5s; }
+      -webkit-transition: opacity .5s,
+ visibility .5s;
+      -o-transition: opacity .5s,
+ visibility .5s;
+      transition: opacity .5s,
+ visibility .5s; }
     .cta__slider-item .caption .thin {
       color: #75dab4;
       font-size: 20px;
@@ -2238,9 +2270,12 @@ header.simpl {
     color: #fff;
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: opacity .5s, visibility .5s;
-    -o-transition: opacity .5s, visibility .5s;
-    transition: opacity .5s, visibility .5s; }
+    -webkit-transition: opacity .5s,
+ visibility .5s;
+    -o-transition: opacity .5s,
+ visibility .5s;
+    transition: opacity .5s,
+ visibility .5s; }
   .slider-bus .caption p {
     color: #eee;
     opacity: 0;
