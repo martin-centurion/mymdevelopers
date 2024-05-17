@@ -5034,6 +5034,13 @@ header.simpl {
     font-size: 40px; } }
 
 @media screen and (max-width: 767px) {
+
+  .whatsapp-icono {
+    position: fixed;
+    bottom: 80px;
+    right: 50px;
+    font-size: 40px;
+  z-index: 9999; }
   .sm-mb10 {
     margin-bottom: 10px; }
   .sm-mb20 {
