@@ -76,16 +76,16 @@ body {
 
       .whatsapp-icono {
         position: fixed;
-        bottom: 130px;
-        right: 120px;
-        font-size: 40px;
+        bottom: 100px;
+        right: 30px;
+        font-size: 30px;
       z-index: 9999; }
         .whatsapp-icono a {
           color: white;
           background-color: #1dd639;
           text-decoration: none;
           border-radius: 50%;
-          padding: 10px 24px;
+          padding: 5px 14px;
           transition: all 0.5s; }
           .whatsapp-icono a:hover {
             color: #1dd639;
@@ -5037,9 +5037,19 @@ header.simpl {
   .whatsapp-icono {
     position: fixed;
     bottom: 80px;
-    right: 50px;
-    font-size: 40px;
+    right: 10px;
+    font-size: 30px;
   z-index: 9999; }
+    .whatsapp-icono a {
+      color: white;
+      background-color: #1dd639;
+      text-decoration: none;
+      border-radius: 50%;
+      padding: 5px 14px;
+      transition: all 0.5s; }
+      .whatsapp-icono a:hover {
+        color: #1dd639;
+        background-color: white; }
   .sm-mb10 {
     margin-bottom: 10px; }
   .sm-mb20 {
