@@ -3783,7 +3783,7 @@ header.simpl {
 .team {
   position: relative; }
   .team .team-container {
-    width: 140%;
+    width: 100%;
     position: relative; }
     .team .team-container:after {
       content: '';
