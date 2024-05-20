@@ -23,39 +23,39 @@ const navbar = {
 
 const banner = {
     es: {
-        text1: "Tienda",
-        text2: "Online",
+        text1: "Tienda Online",
+        text2: "Diseño personalizado, integración de pagos y soporte 24/7.",
         contact: "Contactanos"
     },
     en: {
-        text1: "Shop",
-        text2: "Online",
+        text1: "Shop Online",
+        text2: "Custom design, payment integration, and 24/7 support.",
         contact: "Contact Us"
     }
 }
 
 const bannerdos = {
     es: {
-        text1a: "Sitio",
-        text2a: "Web",
+        text1a: "Diseño Web",
+        text2a: "Transforma tu presencia digital con diseño web profesional. Sitios web personalizados, optimización SEO y soporte continuo. ¡Haz que tu marca destaque hoy mismo!",
         contacta: "Contactanos"
     },
     en: {
-        text1a: "Web",
-        text2a: "Design",
+        text1a: "Web Design",
+        text2a: "Transform your digital presence with professional web design. Custom websites, SEO optimization, and continuous support. Make your brand stand out today!",
         contacta: "Contact Us"
     }
 }
 
 const bannertres = {
     es: {
-        text1b: "Desarrollo de",
-        text2b: "Aplicaciones",
+        text1b: "Desarrollo de App",
+        text2b: "Desarrollamos aplicaciones a medida para impulsar tu negocio. Innovación, funcionalidad y soporte continuo. ¡Lleva tus ideas al siguiente nivel!",
         contactb: "Contactanos"
     },
     en: {
-        text1b: "applications",
-        text2b: "development",
+        text1b: "app development",
+        text2b: "We develop custom applications to boost your business. Innovation, functionality, and continuous support. Take your ideas to the next level!",
         contactb: "Contact Us"
     }
 }
