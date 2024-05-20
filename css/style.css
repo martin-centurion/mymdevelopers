@@ -1319,11 +1319,11 @@ body {
   background: transparent;
   border-bottom: 2px solid transparent;
   z-index: 999;
-  min-height: 80px; }
+  min-height: 120px; }
   .navbar .icon-bar {
     color: #fff; }
   .navbar .navbar-nav .nav-link {
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 500;
     color: #fff;
     padding: 15px 7px;
