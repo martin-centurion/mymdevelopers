@@ -82,29 +82,26 @@
 
             <!-- navbar links -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto" id="navbar">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="sobre-nosotros.html">Sobre nosotros</a>
+                            <a class="nav-link" href="sobre-nosotros.html" id="sobrenosotros"></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="portfolio.html">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            <a class="nav-link" href="contacto.html" id="contacto"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="changeLanguage('es')" id="es"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="changeLanguage('en')" id="in"></a>
                         </li>
                 </ul>
-                <!-- <div class="search">
-                    <span class="icon pe-7s-search cursor-pointer"></span>
-                    <div class="search-form text-center custom-font">
-                        <form>
-                            <input type="text" name="search" placeholder="Search">
-                        </form>
-                        <span class="close pe-7s-close cursor-pointer"></span>
-                    </div>
-                </div> -->
             </div>
         </div>
     </nav>
@@ -114,7 +111,7 @@
 
     <!-- ==================== Start wrapper ==================== -->
 
-    <div class="wrapper">
+    <div class="wrapper" id="pipa">
 
 
         <!-- ==================== Start Header ==================== -->
@@ -124,8 +121,8 @@
                 <div class="row">
                     <div class="col-lg-7 col-md-9">
                         <div class="cont">
-                            <h6>Sitio Web.</h6>
-                            <h2>Pipa Producciones | Próximamente.</h2>
+                            <h6 id="titlePipa"></h6>
+                            <h2 id="descPipa"></h2>
                         </div>
                     </div>
                 </div>
@@ -139,122 +136,73 @@
 
         <!-- ==================== Start Intro ==================== -->
 
-        <section class="intro-section section-padding">
+        <!-- <section class="intro-section section-padding">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-4">
                         <div class="htit">
-                            <h4><span>01 </span> Introducción</h4>
+                            <h4><span>01 </span></h4>
+                            <h4 id="introduccionPipa"></h4>
                         </div>
                     </div>
                     <div class="col-lg-8 offset-lg-1 col-md-8 mb-30">
                         <div class="text">
-                            <p class="extra-text">PRÓXIMAMENTE.</p>
+                            <p class="extra-text" id="textPipa"></p>
                         </div>
                     </div>
 
                     <div class="col-lg-3">
                         <div class="item mt-30">
-                            <h6>Cliente</h6>
-                            <p><a href="#0" target="_blank">PRÓXIMAMENTE</a></p>
+                            <h6 id="clientePipa"></h6>
+                            <p><a href="#0" target="_blank" id="fechaPipa2"></a></p>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="item mt-30">
-                            <h6>Fecha</h6>
-                            <p>PRÓXIMAMENTE</p>
+                            <h6 id="fechaPipa"></h6>
+                            <p id="fechaPipa2"></p>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="item mt-30">
-                            <h6>Categoría</h6>
-                            <p>Sitio web, React Js & JavaScript</p>
+                            <h6 id="categoriaPipa"></h6>
+                            <p id="categoriaPipa2"></p>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="item mt-30">
                             <h6>Tags</h6>
-                            <p>Diseño, Moderno</p>
+                            <p id="tagsPipa"></p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- ==================== End Intro ==================== -->
-
-
-
-
-        <!-- ==================== Start projdtal ==================== -->
-
-        <!-- <section class="projdtal">
-            <div class="justified-gallery">
-                <a href="#" target="_blank">
-                    <img alt="" src="img/portfolio/pipa-producciones/pipa-producciones-vista-desktop.png" />
-                </a>
-                <a href="#" target="_blank">
-                    <img alt="" src="img/portfolio/pipa-producciones/pipa-producciones-vista-uno.png" />
-                </a>
-
-                <a href="#" target="_blank">
-                    <img alt="" src="img/portfolio/pipa-producciones/pipa-producciones-vista-dos.png" />
-                </a>
-                <a href="#" target="_blank">
-                    <img alt="" src="img/portfolio/pipa-producciones/pipa-producciones-vista-mobile.png" />
-                </a>
-            </div>
         </section> -->
 
-        <!-- ==================== End projdtal ==================== -->
-
+        <!-- ==================== End Intro ==================== -->
 
 
         <!-- ==================== Start Intro ==================== -->
 
-        <section class="intro-section section-padding">
+        <!-- <section class="intro-section section-padding">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-4">
                         <div class="htit">
-                            <h4><span>02 </span> Herramientas.</h4>
+                            <h4><span>02</span></h4>
+                            <h4 id="herramientasPipa"></h4>
                         </div>
                     </div>
                     <div class="col-lg-8 offset-lg-1 col-md-8 mb-30">
                         <div class="text">
-                            <p class="extra-text">PRÓXIMAMENTE</p>
+                            <p class="extra-text" id="herramientasTextPipa"></p>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==================== End Intro ==================== -->
-
-
-
-
-        <!-- ==================== Start Video-wrapper ==================== -->
-
-        <!-- <section>
-            <div class="container-fluid">
-                <div class="video-wrapper section-padding bg-img parallaxie valign"
-                    data-background="img/portfolio/project1/bg.jpg" data-overlay-dark="4">
-                    <div class="full-width text-center">
-                        <a class="vid" href="https://vimeo.com/127203262">
-                            <div class="vid-butn">
-                                <span class="icon">
-                                    <i class="fas fa-play"></i>
-                                </span>
-                            </div>
-                        </a>
                     </div>
                 </div>
             </div>
         </section> -->
 
-        <!-- ==================== End Video-wrapper ==================== -->
-
+        <!-- ==================== End Intro ==================== -->
 
 
 
@@ -270,7 +218,7 @@
                                     <div class="o-hidden full-width">
                                         <h1>
                                             <a href="micelio-marketing-digital.html">
-                                                <div class="stroke">Siguiente proyecto</div>
+                                                <div class="stroke" id="siguienteProyecto"></div>
                                             </a>
                                         </h1>
                                     </div>
@@ -279,7 +227,7 @@
                                     <div class="cap full-width">
                                         <h1>
                                             <a href="micelio-marketing-digital.html">
-                                                <span>Siguiente proyecto</span>
+                                                <span id="siguienteProyecto"></span>
                                             </a>
                                         </h1>
                                     </div>
@@ -327,6 +275,7 @@
 
     <!-- custom scripts -->
     <script src="js/scripts.js"></script>
+    <script src="js/language-pipa.js"></script>
 
 </body>
 

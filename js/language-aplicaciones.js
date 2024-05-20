@@ -24,7 +24,7 @@ const aplicaciones = {
         fechaA2: "Mayo 2024",
         categoriaA: "Categoría",
         categoriaA2: "Aplicacion Web, Mongo DB, React Js & javascript",
-        tagsA: "Diseño, WordPress, Moderno",
+        tagsA: "Diseño, Minimalista, Moderno",
         herramientasA: "Herramientas.",
         herramientasTextA: "Nuestra aplicación se desarrolló utilizando la pila MERN (MongoDB, Express, React y Node.js), una combinación poderosa que nos permitió crear una experiencia completa y dinámica para nuestros usuarios. Con MongoDB como base de datos flexible y escalable, Express para construir un backend robusto y eficiente, React para una interfaz de usuario interactiva y Node.js para un servidor rápido y receptivo, pudimos ofrecer un excepcionalmente rápido, confiable y fácil de mantener.",
         siguienteProyecto: "Siguiente Proyecto"
@@ -39,7 +39,7 @@ const aplicaciones = {
         fechaA2: "May 2024",
         categoriaA: "Category",
         categoriaA2: "Web Application, Mongo DB, React Js & javascript",
-        tagsA: "Design, WordPress, Modern",
+        tagsA: "Design, Minimalist, Modern",
         herramientasA: "Tools.",
         herramientasTextA: "Our application was developed using the MERN stack (MongoDB, Express, React JS and Node.js), a powerful combination that allowed us to create a complete and dynamic experience for our users. With MongoDB as a flexible and scalable database, Express to build a robust and efficient backend, React for an interactive UI, and Node.js for a fast and responsive server, we were able to deliver an exceptionally fast, reliable, and easy-to-maintain platform.",
         siguienteProyecto: "Next Project"

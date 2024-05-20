@@ -82,29 +82,26 @@
 
             <!-- navbar links -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto" id="navbar">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="sobre-nosotros.html">Sobre nosotros</a>
+                            <a class="nav-link" href="sobre-nosotros.html" id="sobrenosotros"></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="portfolio.html">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            <a class="nav-link" href="contacto.html" id="contacto"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="changeLanguage('es')" id="es"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="changeLanguage('en')" id="in"></a>
                         </li>
                 </ul>
-                <!-- <div class="search">
-                    <span class="icon pe-7s-search cursor-pointer"></span>
-                    <div class="search-form text-center custom-font">
-                        <form>
-                            <input type="text" name="search" placeholder="Search">
-                        </form>
-                        <span class="close pe-7s-close cursor-pointer"></span>
-                    </div>
-                </div> -->
             </div>
         </div>
     </nav>
@@ -114,7 +111,7 @@
 
     <!-- ==================== Start wrapper ==================== -->
 
-    <div class="wrapper">
+    <div class="wrapper" id="micelio">
 
 
         <!-- ==================== Start Header ==================== -->
@@ -124,8 +121,8 @@
                 <div class="row">
                     <div class="col-lg-7 col-md-9">
                         <div class="cont">
-                            <h6>Sitio Web.</h6>
-                            <h2>Micelio Marketing Digital | Próximamente.</h2>
+                            <h6 id="titleMicelio"></h6>
+                            <h2 id="descMicelio"></h2>
                         </div>
                     </div>
                 </div>
@@ -139,7 +136,7 @@
 
         <!-- ==================== Start Intro ==================== -->
 
-        <section class="intro-section section-padding">
+       <!--  <section class="intro-section section-padding">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-4">
@@ -179,40 +176,14 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- ==================== End Intro ==================== -->
 
 
-
-
-        <!-- ==================== Start projdtal ==================== -->
-
-        <!-- <section class="projdtal">
-            <div class="justified-gallery">
-                <a href="#0" target="_blank">
-                    <img alt="" src="img/portfolio/micelio-marketing-digital/micelio-marketing-digital-vista-desktop.png" />
-                </a>
-                <a href="#0" target="_blank">
-                    <img alt="" src="img/portfolio/micelio-marketing-digital/micelio-marketing-digital-vista-uno.png" />
-                </a>
-
-                <a href="#0" target="_blank">
-                    <img alt="" src="img/portfolio/micelio-marketing-digital/micelio-marketing-digital-vista-dos.png" />
-                </a>
-                <a href="#0" target="_blank">
-                    <img alt="" src="img/portfolio/micelio-marketing-digital/micelio-marketing-digital-vista-mobile.png" />
-                </a>
-            </div>
-        </section> -->
-
-        <!-- ==================== End projdtal ==================== -->
-
-
-
         <!-- ==================== Start Intro ==================== -->
 
-        <section class="intro-section section-padding">
+        <!-- <section class="intro-section section-padding">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-4">
@@ -227,35 +198,9 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- ==================== End Intro ==================== -->
-
-
-
-
-        <!-- ==================== Start Video-wrapper ==================== -->
-
-        <!-- <section>
-            <div class="container-fluid">
-                <div class="video-wrapper section-padding bg-img parallaxie valign"
-                    data-background="img/portfolio/project1/bg.jpg" data-overlay-dark="4">
-                    <div class="full-width text-center">
-                        <a class="vid" href="https://vimeo.com/127203262">
-                            <div class="vid-butn">
-                                <span class="icon">
-                                    <i class="fas fa-play"></i>
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
         </section> -->
 
-        <!-- ==================== End Video-wrapper ==================== -->
-
-
+        <!-- ==================== End Intro ==================== -->
 
 
         <!-- ==================== Start next-prog ==================== -->
@@ -327,6 +272,7 @@
 
     <!-- custom scripts -->
     <script src="js/scripts.js"></script>
+    <script src="js/language-micelio.js"></script>
 
 </body>
 
