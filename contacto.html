@@ -86,29 +86,26 @@
 
             <!-- navbar links -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto" id="navbar">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="sobre-nosotros.html">Sobre nosotros</a>
+                            <a class="nav-link" href="sobre-nosotros.html" id="sobrenosotros"></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="portfolio.html">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contact</a>
+                            <a class="nav-link" href="contacto.html" id="contacto"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="changeLanguage('es')" id="es"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="changeLanguage('en')" id="in"></a>
                         </li>
                 </ul>
-                <!-- <div class="search">
-                    <span class="icon pe-7s-search cursor-pointer"></span>
-                    <div class="search-form text-center custom-font">
-                        <form>
-                            <input type="text" name="search" placeholder="Search">
-                        </form>
-                        <span class="close pe-7s-close cursor-pointer"></span>
-                    </div>
-                </div> -->
             </div>
         </div>
     </nav>
@@ -119,17 +116,17 @@
     <!-- ==================== Start header ==================== -->
 
     <header class="works-header fixed-slider hfixd valign">
-        <div class="container">
+        <div class="container" id="titleContacto">
             <div class="row justify-content-center">
                 <div class="col-lg-9 col-md-11 static">
                     <div class="capt mt-50">
                         <div class="parlx">
-                            <h2 class="custom-font"><span>Hola!</span>Contanos tu idea.</h2>
-                            <p>No dudes en hacernos cualquier pregunta o contarnos de tu proyecto, podemos asesorarte sin cargo y sin compromiso.</p>
+                            <h2 class="custom-font" id="titleC"></h2>
+                            <p id="descriptionC"></p>
                         </div>
 
                         <div class="bactxt custom-font valign">
-                            <span class="full-width">Contacto</span>
+                            <span class="full-width" id="spamC"></span>
                         </div>
                     </div>
                 </div>
@@ -147,12 +144,12 @@
         <!-- ==================== Start Contact ==================== -->
 
         <section class="contact section-padding">
-            <div class="container">
+            <div class="container" id="contactText">
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="form md-mb50">
 
-                            <h4 class="extra-title mb-50">A solo un paso</h4>
+                            <h4 class="extra-title mb-50" id="titleForm"></h4>
 
                             <form id="contact-form" method="POST" action="contact.php">
 
@@ -161,7 +158,7 @@
                                 <div class="controls">
 
                                     <div class="form-group">
-                                        <input id="form_name" type="text" name="name" placeholder="Nombre"
+                                        <input id="form_name" type="text" name="name" placeholder="Name / Nombre"
                                             required="required">
                                     </div>
 
@@ -171,25 +168,25 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <textarea id="form_message" name="message" placeholder="Mensaje" rows="4"
+                                        <textarea id="form_message" name="message" placeholder="Message / Mensaje" rows="4"
                                             required="required"></textarea>
                                     </div>
 
-                                    <button type="submit" class="btn-curve btn-lit"><span>Envíar Mensaje</span></button>
+                                    <button type="submit" class="btn-curve btn-lit"><span id="buttomForm"></span></button>
                                 </div>
                             </form>
                         </div>
                     </div>
                     <div class="col-lg-5 offset-lg-1">
                         <div class="cont-info">
-                            <h4 class="extra-title mb-50">Info Contacto.</h4>
-                            <h3 class="custom-font wow" data-splitting>Hablemos.
+                            <h4 class="extra-title mb-50" id="titleForm2"></h4>
+                            <h3 class="custom-font wow" data-splitting id="hablemos">
                             </h3>
                             <div class="item mb-40">
                                 <h5><a href="#0">mymwebdevelopers@gmail.com</a></h5>
                                 <h5>(+54) 9 11 6378 5934</h5>
                             </div>
-                            <h3 class="custom-font wow" data-splitting>Donde Estamos?.
+                            <h3 class="custom-font wow" data-splitting id="dondeEstamos">
                             </h3>
                             <div class="item">
                                 <h6>Buenos Aires,
@@ -250,6 +247,7 @@
 
     <!-- custom scripts -->
     <script src="js/scripts.js"></script>
+    <script src="js/language-contacto.js"></script>
 
     <!-- Map -->
     <script src="js/map.js"></script>
