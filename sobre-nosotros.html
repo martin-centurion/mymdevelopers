@@ -87,29 +87,26 @@
 
             <!-- navbar links -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto" id="navbar">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="sobre-nosotros.html">Sobre nosotros</a>
+                            <a class="nav-link" href="sobre-nosotros.html" id="sobrenosotros"></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="portfolio.html">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contact</a>
+                            <a class="nav-link" href="contacto.html" id="contacto"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="changeLanguage('es')" id="es"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="changeLanguage('en')" id="in"></a>
                         </li>
                 </ul>
-                <!-- <div class="search">
-                    <span class="icon pe-7s-search cursor-pointer"></span>
-                    <div class="search-form text-center custom-font">
-                        <form>
-                            <input type="text" name="search" placeholder="Search">
-                        </form>
-                        <span class="close pe-7s-close cursor-pointer"></span>
-                    </div>
-                </div> -->
             </div>
         </div>
     </nav>
@@ -121,13 +118,13 @@
     <!-- ==================== Start Slider ==================== -->
 
     <header class="pages-header bg-img valign parallaxie" data-background="img/slid/sobre-nosotros.png" data-overlay-dark="5">
-        <div class="container">
+        <div class="container" id="banner">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="cont text-center">
-                        <h1>Sobre nosotros</h1>
+                        <h1 id="text1"></h1>
                         <div class="path">
-                            <a href="index.html">Home</a><span>/</span><a href="sobre-nosotros.html" class="active">Sobre nosotros</a>
+                            <a href="index.html">Home</a><span>/</span><a href="sobre-nosotros.html" class="active" id="text2"></a>
                         </div>
                     </div>
                 </div>
@@ -141,17 +138,17 @@
 
     <!-- ==================== Start Intro ==================== -->
 
-    <section class="intro-section section-padding pb-0">
+    <section class="intro-section section-padding pb-0" id="title1">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-4">
                     <div class="htit sm-mb30">
-                        <h4>¿Quienes Somos?</h4>
+                        <h4 id="title"></h4>
                     </div>
                 </div>
                 <div class="col-lg-8 offset-lg-1 col-md-8">
                     <div class="text">
-                        <p class="wow txt" data-splitting>Somos un estudio de desarrollo que se dedica a cultivar ideas inteligentes para empresas emergentes y emprendedores experimentados. Nuestro compromiso es satisfacer y superar las expectativas de cada cliente.
+                        <p class="wow txt" data-splitting id="description">
                         </p>
                     </div>
                 </div>
@@ -165,28 +162,28 @@
 
     <!-- ==================== Start Services ==================== -->
 
-    <section class="services section-padding">
+    <section class="services section-padding" id="title1">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
                     <div class="item md-mb50 wow fadeInUp" data-wow-delay=".3s">
                         <span class="icon pe-7s-shopbag"></span>
-                        <h6>Tiendas online</h6>
-                        <p>Explorá nuestras soluciones de tiendas online, diseñadas con precisión y personalización para satisfacer las necesidades únicas de cada cliente.</p>
+                        <h6 id="titletienda"></h6>
+                        <p id="ptienda"></p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="item md-mb50 wow fadeInUp" data-wow-delay=".5s">
                         <span class="icon pe-7s-monitor"></span>
-                        <h6>Sitios web</h6>
-                        <p>Descubrí nuestros sitios web, construidos con dedicación y experiencia para ofrecer una presencia digital impactante y funcional.</p>
+                        <h6 id="titleweb"></h6>
+                        <p id="pweb"></p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="item wow fadeInUp" data-wow-delay=".7s">
                         <span class="icon pe-7s-phone"></span>
-                        <h6>Aplicaciones</h6>
-                        <p>Sumergite en nuestras aplicaciones, desarrolladas con un enfoque meticuloso en cada detalle para brindarte funcionalidades innovadoras y un rendimiento óptimo.</p>
+                        <h6 id="titleapp"></h6>
+                        <p id="papp"></p>
                     </div>
                 </div>
             </div>
@@ -196,154 +193,16 @@
     <!-- ==================== End Services ==================== -->
 
 
-
-    <!-- ==================== Start block-sec ==================== -->
-
-    <!-- <section class="block-sec">
-        <div class="background bg-img section-padding pb-0" data-background="img/slid/1.jpg" data-overlay-dark="8">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="vid-area">
-                            <div class="vid-icon">
-                                <a class="vid" href="https://vimeo.com/127203262">
-                                    <div class="vid-butn">
-                                        <span class="icon">
-                                            <i class="fas fa-play"></i>
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="cont">
-                                <h3 class="wow" data-splitting>So that's us. There's no other way to put it.</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 offset-lg-1">
-                        <div class="testim-box">
-                            <div class="head-box">
-                                <h6 class="wow fadeIn" data-wow-delay=".5s">Our Happy Clients</h6>
-                                <h4 class="wow fadeInLeft" data-wow-delay=".5s">What Client's Say?</h4>
-                            </div>
-                            <div class="slic-item wow fadeInUp" data-wow-delay=".5s">
-                                <div class="item">
-                                    <p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh volutpat velit
-                                        class
-                                        aptent taciti sociosqu ad litora.</p>
-                                    <div class="info">
-                                        <div class="img">
-                                            <div class="img-box">
-                                                <img src="img/clients/1.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="cont">
-                                            <div class="author">
-                                                <h6 class="author-name custom-font">Alex Regelman</h6>
-                                                <span class="author-details">Co-founder, Colabrio</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh volutpat velit
-                                        class
-                                        aptent taciti sociosqu ad litora.</p>
-                                    <div class="info">
-                                        <div class="img">
-                                            <div class="img-box">
-                                                <img src="img/clients/2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="cont">
-                                            <div class="author">
-                                                <h6 class="author-name custom-font">Alex Regelman</h6>
-                                                <span class="author-details">Co-founder, Colabrio</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh volutpat velit
-                                        class
-                                        aptent taciti sociosqu ad litora.</p>
-                                    <div class="info">
-                                        <div class="img">
-                                            <div class="img-box">
-                                                <img src="img/clients/3.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="cont">
-                                            <div class="author">
-                                                <h6 class="author-name custom-font">Alex Regelman</h6>
-                                                <span class="author-details">Co-founder, Colabrio</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- ==================== End block-sec ==================== -->
-
-
-
-    <!-- ==================== Start Skills Circle ==================== -->
-
-    <!-- <section class="skills-circle sub-bg pt-50 pb-50">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7">
-                    <div class="">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="item wow fadeInUp" data-wow-delay=".6">
-                                    <div class="skill" data-value="0.9">
-                                        <span class="custom-font">90%</span>
-                                    </div>
-                                    <div class="cont">
-                                        <span>Project</span>
-                                        <h6>Consulting</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="item wow fadeInUp" data-wow-delay=".3">
-                                    <div class="skill" data-value="0.75">
-                                        <span class="custom-font">75%</span>
-                                    </div>
-                                    <div class="cont">
-                                        <span>App</span>
-                                        <h6>Development</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- ==================== End Skills Circle ==================== -->
-
-
-
     <!-- ==================== Start Team ==================== -->
 
     <section class="team section-padding">
-        <div class="container">
+        <div class="container" id="equipo">
             <div class="row">
                 <div class="col-lg-4 valign">
-                    <div class="full-width">
+                    <div class="full-width"  >
                         <div class="sec-head custom-font mb-0">
                             <h6>Staff</h6>
-                            <h3>Nuestro Equipo.</h3>
+                            <h3 id="titlestaff"></h3>
                         </div>
                         <div class="navs mt-30 wow fadeInUp" data-wow-delay=".3s">
                             <span class="prev cursor-pointer">
@@ -363,19 +222,19 @@
                             </div>
                             <div class="info">
                                 <h5>Martina Riesco</h5>
-                                <span>Programadora Full Stack</span>
+                                <span id="descriptionstaff"></span>
                                 <div class="social">
                                     <a href="https://www.linkedin.com/in/martina-riesco-331449253/" target="_blank"><i class="fab fa-linkedin"></i></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="item wow fadeInUp" data-wow-delay=".3s">
+                        <div class="item wow fadeInUp" data-wow-delay=".3s" id="equipo">
                             <div class="img wow imago">
-                                <img src="img/team/martin-centurion.png" alt="">
+                                <img src="img/team/martin-centurion.png" alt="Martin Centurión | Programador Full Stack">
                             </div>
                             <div class="info">
                                 <h5>Martín Centurión</h5>
-                                <span>Progamador Full Stack</span>
+                                <span id="descriptionstaffdos"></span>
                                 <div class="social">
                                     <a href="https://www.linkedin.com/in/martin-centurion-375043246/"><i class="fab fa-linkedin"></i></a>
                                 </div>
@@ -393,31 +252,34 @@
 
     <!-- ==================== Start Minimal-Area ==================== -->
 
-    <section class="min-area sub-bg">
-        <div class="container">
+    <section class="min-area sub-bg section-padding">
+        <div class="container" >
             <div class="row">
                 <div class="col-lg-4">
                     <div class="img">
                         <img class="thumparallax-down" src="img/team/sobre-nosotros-foto.png" alt="">
                     </div>
                 </div>
-                <div class="col-lg-8 valign">
+                <div class="col-lg-8 valign" id="aboutustitle">
                     <div class="content">
-                        <h4 class="wow custom-font" data-splitting>Sobre nosotros.</h4>
-                        <p class="wow txt" data-splitting>Nuestra estudio de desarrollado ha cumplido con cada una de las indicaciones de los clientes. Cultivamos ideas inteligentes para empresas emergentes y emprendedores experimentados.
+                        <h4 class="wow custom-font" data-splitting id="titleaboutus"></h4>
+                        <p class="wow txt" data-splitting id="textaboutus">
                         </p>
                         <ul class="feat">
                             <li class="wow fadeInUp" data-wow-delay=".2s">
-                                <h6><span>1</span>Misión</h6>
-                                <p>Guiados por la pasión por la innovación, nuestra misión es materializar las visiones de nuestros clientes mediante soluciones digitales inteligentes y estratégicas.</p>
+                                <h6><span>1</span></h6>
+                                <h6 id="misiontitle"></h6>
+                                <p id="misiontext"></p>
                             </li>
                             <li class="wow fadeInUp" data-wow-delay=".4s">
-                                <h6><span>2</span>Objetivos</h6>
-                                <p>Nuestros objetivos se centran en proporcionar resultados excepcionales a través de un enfoque colaborativo, fomentando la creatividad y la excelencia en cada proyecto.</p>
+                                <h6><span>2</span></h6>
+                                <h6 id="objetivostitle"></h6>
+                                <p id="objetivostext"></p>
                             </li>
                             <li class="wow fadeInUp" data-wow-delay=".6s">
-                                <h6><span>3</span>¿Por qué nosotros?</h6>
-                                <p>Elegirnos significa optar por un equipo comprometido con la excelencia y la entrega de soluciones a medida. Nos destacamos por nuestra capacidad para convertir desafíos en oportunidades y crear valor real para nuestros clientes.</p>
+                                <h6><span>3</span></h6>
+                                <h6 id="nosotrostitle"></h6>
+                                <p id="nosotrostext"></p>
                             </li>
                         </ul>
                     </div>
@@ -523,18 +385,18 @@
 
     <!-- ==================== Start call-to-action ==================== -->
 
-    <section class="call-action section-padding bg-img" data-background="img/pattern.png">
+    <section class="call-action section-padding bg-img" data-background="img/pattern.png" >
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-lg-9">
-                    <div class="content sm-mb30">
-                        <h6 class="wow" data-splitting>a solo un paso de</h6>
-                        <h2 class="wow custom-font" data-splitting>crear <b>tu proyecto</b>.</h2>
+                    <div class="content sm-mb30" id="contacthome">
+                        <h6 class="wow" data-splitting id="asolounpaso"></h6>
+                        <h2 class="wow custom-font" data-splitting id="crear"><b id="tuproyecto"></b></h2>
                     </div>
                 </div>
 
                 <div class="col-md-4 col-lg-3 valign">
-                    <a href="contacto.html" class="btn-curve btn-lit"><span>Contactanos</span></a>
+                    <a href="contacto.html" class="btn-curve btn-lit"><span id="contactanos"></span></a>
                 </div>
 
             </div>
@@ -547,7 +409,7 @@
 
     <!-- ==================== Start Footer ==================== -->
 
-    <footer class="footer-half sub-bg section-padding pb-0">
+    <footer class="footer-half sub-bg section-padding pb-0" id="contactfooter">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
@@ -560,13 +422,13 @@
                         <div class="con-info custom-font">
                             <ul>
                                 <li><span>Email : </span>mymwebdevelopers@gmail.com</li>
-                                <li><span>Ubicación : </span> Buenos Aires, Argentina.
+                                <li><span id="ubicacion"></span> Buenos Aires, Argentina.
                                 </li>
                                 <li><span>WhatsApp : </span> (+54) 9 11 6378 5934</li>
                             </ul>
                         </div>
                         <div class="social-icon">
-                            <h6 class="custom-font stit simple-btn">Seguinos</h6>
+                            <h6 class="custom-font stit simple-btn" id="seguinos"></h6>
                             <div class="social">
                                 <a href="https://www.instagram.com/mymdevelopers/" target="_blank" class="icon">
                                     <i class="fab fa-instagram"></i>
@@ -587,7 +449,7 @@
                         </form>
                     </div> -->
                     <div class="insta">
-                        <h6 class="custom-font stit simple-btn">Herramientas</h6>
+                        <h6 class="custom-font stit simple-btn" id="herramientas"></h6>
                         <div class="insta-gallary">
                             <a href="#0">
                                 <img src="img/insta/logo-react.png" alt="">
@@ -629,6 +491,7 @@
 
     <!-- custom scripts -->
     <script src="js/scripts.js"></script>
+    <script src="js/language-about-us.js"></script>
 
 </body>
 

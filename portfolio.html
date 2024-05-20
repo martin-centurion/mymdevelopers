@@ -87,29 +87,26 @@
 
             <!-- navbar links -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto" id="navbar">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="sobre-nosotros.html">Sobre nosotros</a>
+                            <a class="nav-link" href="sobre-nosotros.html" id="sobrenosotros"></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="portfolio.html">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            <a class="nav-link" href="contacto.html" id="contacto"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="changeLanguage('es')" id="es"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="changeLanguage('en')" id="in"></a>
                         </li>
                 </ul>
-                <!-- <div class="search">
-                    <span class="icon pe-7s-search cursor-pointer"></span>
-                    <div class="search-form text-center custom-font">
-                        <form>
-                            <input type="text" name="search" placeholder="Search">
-                        </form>
-                        <span class="close pe-7s-close cursor-pointer"></span>
-                    </div>
-                </div> -->
             </div>
         </div>
     </nav>
@@ -121,13 +118,13 @@
     <!-- ==================== Start header ==================== -->
 
     <header class="works-header fixed-slider hfixd valign">
-        <div class="container">
+        <div class="container" id="banner">
             <div class="row justify-content-center">
                 <div class="col-lg-9 col-md-11 static">
                     <div class="capt mt-50">
                         <div class="parlx">
-                            <h2 class="custom-font">Nuestros trabajos</h2>
-                            <p>Diseños modernos con la última tendencia de desarrollo.</p>
+                            <h2 class="custom-font" id="text1"></h2>
+                            <p id="text2"></p>
                         </div>
 
                         <div class="bactxt custom-font valign">
@@ -148,21 +145,21 @@
         <!-- ==================== Start works ==================== -->
 
         <section class="portfolio section-padding pb-70">
-            <div class="container">
+            <div class="container"  id="portfoliohome">
                 <div class="row">
     
                     <!-- filter links -->
-                    <div class="filtering text-right smplx col-12">
+                    <div class="filtering text-center col-12">
                         <div class="filter">
-                            <span data-filter='*' class="active">Todos</span>
-                            <span data-filter='.web'>Sitio web</span>
+                            <span data-filter='*' class="active" id="todos"></span>
+                            <span data-filter='.web' id="sitioweb"></span>
                             <span data-filter='.wp'>WordPress</span>
-                            <span data-filter='.app'>Aplicaciones</span>
+                            <span data-filter='.app' id="aplicaciones"></span>
                         </div>
                     </div>
     
                     <!-- gallery -->
-                    <div class="gallery full-width">
+                    <div class="gallery full-width" id="portfoliohome">
     
                         <!-- gallery item -->
                         <div class="col-lg-4 col-md-6 items app lg-mr">
@@ -173,7 +170,7 @@
                                 </a>
                             </div>
                             <div class="cont">
-                                <h6>Aplicación Web</h6>
+                                <h6 id="proyecto1"></h6>
                                 <span>mongo db, react js & javascript</span>
                             </div>
                         </div>
@@ -187,7 +184,7 @@
                                 </a>
                             </div>
                             <div class="cont">
-                                <h6>Ana Bauer | Fotógrafa & Filmmaker</h6>
+                                <h6 id="proyecto2"></h6>
                                 <span>react js & javascript</span>
                             </div>
                         </div>
@@ -201,7 +198,7 @@
                                 </a>
                             </div>
                             <div class="cont">
-                                <h6>German Riesco | Arquitecto</h6>
+                                <h6 id="proyecto3"></h6>
                                 <span>react js & javascript</span>
                             </div>
                         </div>
@@ -215,7 +212,7 @@
                                 </a>
                             </div>
                             <div class="cont">
-                                <h6>Tekohá Eco</h6>
+                                <h6 id="proyecto4"></h6>
                                 <span>WordPress</span>
                             </div>
                         </div>
@@ -229,7 +226,7 @@
                                 </a>
                             </div>
                             <div class="cont">
-                                <h6>Sonder Tango | Orquesta</h6>
+                                <h6 id="proyecto5"></h6>
                                 <span>WordPress</span>
                             </div>
                         </div>
@@ -243,7 +240,7 @@
                                 </a>
                             </div>
                             <div class="cont">
-                                <h6>Pipa Producciones | Productora</h6>
+                                <h6 id="proyecto6"></h6>
                                 <span>En desarrollo | WordPress</span>
                             </div>
                         </div>
@@ -257,7 +254,7 @@
                                 </a>
                             </div>
                             <div class="cont">
-                                <h6>Micelio | Marketing Digital</h6>
+                                <h6 id="proyecto7"></h6>
                                 <span>En desarrollo | WordPress</span>
                             </div>
                         </div>
@@ -272,29 +269,29 @@
 
         <!-- ==================== Start call-to-action ==================== -->
 
-    <section class="call-action section-padding bg-img" data-background="img/pattern.png">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-lg-9">
-                    <div class="content sm-mb30">
-                        <h6 class="wow" data-splitting>a solo un paso de</h6>
-                        <h2 class="wow custom-font" data-splitting>crear <b>tu proyecto</b>.</h2>
+        <section class="call-action section-padding bg-img" data-background="img/pattern.png" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-lg-9">
+                        <div class="content sm-mb30" id="contacthome">
+                            <h6 class="wow" data-splitting id="asolounpaso"></h6>
+                            <h2 class="wow custom-font" data-splitting id="crear"><b id="tuproyecto"></b></h2>
+                        </div>
                     </div>
+    
+                    <div class="col-md-4 col-lg-3 valign">
+                        <a href="contacto.html" class="btn-curve btn-lit"><span id="contactanos"></span></a>
+                    </div>
+    
                 </div>
-
-                <div class="col-md-4 col-lg-3 valign">
-                    <a href="contacto.html" class="btn-curve btn-lit"><span>Contactanos</span></a>
-                </div>
-
             </div>
-        </div>
-    </section>
+        </section>
 
     <!-- ==================== End call-to-action ==================== -->
 
         <!-- ==================== Start Footer ==================== -->
 
-        <footer class="footer-half sub-bg section-padding pb-0">
+        <footer class="footer-half sub-bg section-padding pb-0" id="contactfooter">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5">
@@ -307,13 +304,13 @@
                             <div class="con-info custom-font">
                                 <ul>
                                     <li><span>Email : </span>mymwebdevelopers@gmail.com</li>
-                                    <li><span>Ubicación : </span> Buenos Aires, Argentina.
+                                    <li><span id="ubicacion"></span> Buenos Aires, Argentina.
                                     </li>
                                     <li><span>WhatsApp : </span> (+54) 9 11 6378 5934</li>
                                 </ul>
                             </div>
                             <div class="social-icon">
-                                <h6 class="custom-font stit simple-btn">Seguinos</h6>
+                                <h6 class="custom-font stit simple-btn" id="seguinos"></h6>
                                 <div class="social">
                                     <a href="https://www.instagram.com/mymdevelopers/" target="_blank" class="icon">
                                         <i class="fab fa-instagram"></i>
@@ -334,7 +331,7 @@
                             </form>
                         </div> -->
                         <div class="insta">
-                            <h6 class="custom-font stit simple-btn">Herramientas</h6>
+                            <h6 class="custom-font stit simple-btn" id="herramientas"></h6>
                             <div class="insta-gallary">
                                 <a href="#0">
                                     <img src="img/insta/logo-react.png" alt="">
@@ -379,7 +376,7 @@
 
     <!-- custom scripts -->
     <script src="js/scripts.js"></script>
-
+    <script src="js/language-portfolio.js"></script>
 
 </body>
 

@@ -82,29 +82,26 @@
 
             <!-- navbar links -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto" id="navbar">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="sobre-nosotros.html">Sobre nosotros</a>
+                            <a class="nav-link" href="sobre-nosotros.html" id="sobrenosotros"></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="portfolio.html">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            <a class="nav-link" href="contacto.html" id="contacto"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="changeLanguage('es')" id="es"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="changeLanguage('en')" id="in"></a>
                         </li>
                 </ul>
-                <!-- <div class="search">
-                    <span class="icon pe-7s-search cursor-pointer"></span>
-                    <div class="search-form text-center custom-font">
-                        <form>
-                            <input type="text" name="search" placeholder="Search">
-                        </form>
-                        <span class="close pe-7s-close cursor-pointer"></span>
-                    </div>
-                </div> -->
             </div>
         </div>
     </nav>
@@ -114,18 +111,18 @@
 
     <!-- ==================== Start wrapper ==================== -->
 
-    <div class="wrapper">
+    <div class="wrapper" >
 
 
         <!-- ==================== Start Header ==================== -->
 
         <section class="page-header proj-det">
-            <div class="container">
+            <div class="container" id="germanriesco">
                 <div class="row">
                     <div class="col-lg-7 col-md-9">
                         <div class="cont">
-                            <h6>Sitio web.</h6>
-                            <h2>Germán Riesco| Estudio de Iluminación.</h2>
+                            <h6 id="titleGermanRiesco"></h6>
+                            <h2 id="descGermanRiesco"></h2>
                         </div>
                     </div>
                 </div>
@@ -144,37 +141,38 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-4">
                         <div class="htit">
-                            <h4><span>01 </span> Introducción</h4>
+                            <h4><span>01 </span></h4>
+                            <h4 id="introduccionGR">Introducción</h4>
                         </div>
                     </div>
                     <div class="col-lg-8 offset-lg-1 col-md-8 mb-30">
                         <div class="text">
-                            <p class="extra-text">Creamos una página web destinada a resaltar la especialidad de nuestro cliente: la arquitectura lumínica. Desde el momento en que se carga la página, los visitantes son recibidos por un diseño que pone la luz en el centro del escenario. Con un enfoque meticuloso en la iluminación y su impacto en los espacios arquitectónicos, esta página web se convierte en una galería virtual que celebra la interacción entre luz y arquitectura. Cada sección de la web está cuidadosamente diseñada para resaltar los proyectos del estudio, mostrando cómo la iluminación puede transformar y definir un espacio. Desde espectaculares diseños de interiores hasta impresionantes paisajes urbanos, nuestro objetivo fue crear una experiencia en línea que refleje la belleza y el poder de la luz en la arquitectura moderna.</p>
+                            <p class="extra-text" id="textGR"></p>
                         </div>
                     </div>
 
                     <div class="col-lg-3">
                         <div class="item mt-30">
-                            <h6>Cliente</h6>
+                            <h6 id="clienteGR"></h6>
                             <p><a href="https://www.germanriesco.com.ar" target="_blank">germanriesco.com.ar</a></p>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="item mt-30">
-                            <h6>Fecha</h6>
-                            <p>Noviembre 2023</p>
+                            <h6 id="fechaGR"></h6>
+                            <p id="fechaGR2"></p>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="item mt-30">
-                            <h6>Categoría</h6>
-                            <p>Sitio Web, React Js & javascript</p>
+                            <h6 id="categoriaGR"></h6>
+                            <p id="categoriaGR2"></p>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="item mt-30">
                             <h6>Tags</h6>
-                            <p>Diseño, Minimalista, Moderno</p>
+                            <p id="tagsGR"></p>
                         </div>
                     </div>
                 </div>
@@ -217,12 +215,13 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-4">
                         <div class="htit">
-                            <h4><span>02 </span> Herramientas.</h4>
+                            <h4><span>02 </span></h4>
+                            <h4 id="herramientasGR"></h4>
                         </div>
                     </div>
                     <div class="col-lg-8 offset-lg-1 col-md-8 mb-30">
                         <div class="text">
-                            <p class="extra-text">Nuestro sitio web fue creada utilizando tecnologías de vanguardia como React Js y JavaScript. Con estas potentes herramientas, pudimos ofrecer una experiencia de usuario dinámica y receptiva. React nos permitió construir interfaces de usuario interactivas y escalables, mientras que JavaScript añadió funcionalidades personalizadas y un rendimiento óptimo. Además, todo el bocetado y diseño inicial se llevó a cabo en Figma, permitiéndonos visualizar y planificar cada detalle antes de comenzar el desarrollo</p>
+                            <p class="extra-text" id="herramientasTextGR"></p>
                         </div>
                     </div>
                 </div>
@@ -263,14 +262,14 @@
         <section class="next-prog section-padding">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12" id="germanriesco">
                         <div class="box">
                             <div class="bg-img valign" data-background="img/portfolio/sonder-tango/sonder-tango-todas-las-vistas.png" data-overlay-dark="4">
                                 <div class="caption ontop valign">
                                     <div class="o-hidden full-width">
                                         <h1>
                                             <a href="sonder-tango-orquesta.html">
-                                                <div class="stroke">Siguiente proyecto</div>
+                                                <div class="stroke" id="siguienteProyecto"></div>
                                             </a>
                                         </h1>
                                     </div>
@@ -279,7 +278,7 @@
                                     <div class="cap full-width">
                                         <h1>
                                             <a href="sonder-tango-orquesta.html">
-                                                <span>Siguiente proyecto</span>
+                                                <span id="siguienteProyecto"></span>
                                             </a>
                                         </h1>
                                     </div>
@@ -327,6 +326,7 @@
 
     <!-- custom scripts -->
     <script src="js/scripts.js"></script>
+    <script src="js/language-german-riesco.js"></script>
 
 </body>
 

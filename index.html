@@ -86,28 +86,26 @@
 
             <!-- navbar links -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto" id="navbar">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="sobre-nosotros.html">Sobre nosotros</a>
+                            <a class="nav-link" href="sobre-nosotros.html" id="sobrenosotros"></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="portfolio.html">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contact</a>
+                            <a class="nav-link" href="contacto.html" id="contacto"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="changeLanguage('es')" id="es"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="changeLanguage('en')" id="in"></a>
                         </li>
                 </ul>
-                <div class="search">
-                    
-                    <div class="search-form text-center custom-font">
-                        <a href="#0" class="simple-btn mt-50">
-                            <span class="icon pe-7s-search cursor-pointer"></span>
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
     </nav>
@@ -121,16 +119,17 @@
     <header class="slider slider-prlx">
         <div class="swiper-container parallax-slider">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <div class="swiper-slide" >
                     <div class="bg-img valign" data-background="img/slid/tienda-online.png" data-overlay-dark="6">
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-12">
+                                <div class="col-lg-12" id="banner">
                                     <div class="caption dig">
-                                        <h1 data-splitting>Tienda <div class="tline">Online</div>
+                                        <h1 data-splitting id="text1"> 
                                         </h1>
-                                        <a href="#0" class="simple-btn mt-50">
-                                            <span>Contactanos</span>
+                                        <div class="tline" id="text2"></div>
+                                        <a href="contacto.html" class="simple-btn mt-50">
+                                            <span id="contact"></span>
                                         </a>
                                     </div>
                                 </div>
@@ -142,12 +141,13 @@
                     <div class="bg-img valign" data-background="img/slid/sitio-web.png" data-overlay-dark="6">
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-12">
+                                <div class="col-lg-12" id="bannerdos">
                                     <div class="caption dig">
-                                        <h1 data-splitting>Sitios <div class="tline">Web</div>
+                                        <h1 data-splitting id="text1a"> 
                                         </h1>
-                                        <a href="#0" class="simple-btn mt-50">
-                                            <span>Contactanos</span>
+                                        <div class="tline" id="text2a"></div>
+                                        <a href="contacto.html" class="simple-btn mt-50">
+                                            <span id="contacta"></span>
                                         </a>
                                     </div>
                                 </div>
@@ -159,12 +159,12 @@
                     <div class="bg-img valign" data-background="img/slid/aplicaciones.png" data-overlay-dark="6">
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-12">
+                                <div class="col-lg-12" id="bannertres">
                                     <div class="caption dig">
-                                        <h1 data-splitting>Desarrollo de <div class="tline">Aplicaciones</div>
-                                        </h1>
-                                        <a href="#0" class="simple-btn mt-50">
-                                            <span>Contactanos</span>
+                                        <h1 data-splitting id="text1b"></h1>
+                                        <div class="tline" id="text2b"></div>
+                                        <a href="contacto.html" class="simple-btn mt-50">
+                                            <spa id="contactb"></span>
                                         </a>
                                     </div>
                                 </div>
@@ -198,25 +198,24 @@
     <!-- ==================== Start blc-sec ==================== -->
 
     <section class="blc-sec section-padding pb-0">
-        <div class="container">
+        <div class="container" id="title1">
             <div class="row">
                 <div class="col-lg-7">
                     <div class="intro md-mb30">
                         <div class="sub-title">
-                            <h6>Mente Creativa</h6>
+                            <h6 id="subtitle1"></h6>
                             <span></span>
                             <span></span>
                             <span></span>
                         </div>
-                        <h2 class="extra-title wow" data-splitting>Estamos preparados para afrontar cualquier tipo de proyecto.
+                        <h2 class="extra-title wow" data-splitting id="title">
                         </h2>
                     </div>
                 </div>
                 <div class="col-lg-5 valign">
                     <div class="full-width">
-                        <p class="wow txt" data-splitting>Cada proyecto es único y nos involucramos en cada uno de los detalles porque los consideramos esenciales para alcanzar el objetivo final. Tenemos una actitud positiva y entusiasta para enfrentar cualquier desafío que nos propongas y siempre buscamos lograr el mejor resultado.
-                        </p>
-                        <a href="sobre-nosotros.html" class="simple-btn custom-font mt-20 wow" data-splitting><span>Saber Más</span></a>
+                        <p class="wow txt" data-splitting id="description"></p>
+                        <a href="sobre-nosotros.html" class="simple-btn custom-font mt-20 wow" data-splitting  id="more"><span></span></a>
                     </div>
                 </div>
             </div>
@@ -226,194 +225,13 @@
     <!-- ==================== End blc-sec ==================== -->
 
 
-
-    <!-- ==================== Start Services ==================== -->
-
-    <!-- <section class="services section-padding">
-        <div class="container">
-            <div class="row rone">
-                <div class="col-lg-3 wow fadeInUp" data-wow-delay=".4s">
-                    <div class="mas-item">
-                        <span class="icon pe-7s-shopbag"></span>
-                        <h6>Tiendas <br> Online</h6>
-                        <div class="text-right">
-                            <a href="sobre-nosotros.html" class="more"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                        <div class="bg-color"></div>
-                    </div>
-                </div>
-                <div class="col-lg-3 offset-lg-1 wow fadeInUp" data-wow-delay=".4s">
-                    <div class="mas-item">
-                        <span class="icon pe-7s-monitor"></span>
-                        <h6>Sitios <br> Web</h6>
-                        <div class="text-right">
-                            <a href="sobre-nosotros.html" class="more"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                        <div class="bg-color"></div>
-                    </div>
-                </div>
-                <div class="col-lg-3 offset-lg-1 wow fadeInUp" data-wow-delay=".4s">
-                    <div class="mas-item">
-                        <span class="icon pe-7s-phone"></span>
-                        <h6>Desarrollo de <br> Aplicaciones</h6>
-                        <div class="text-right">
-                            <a href="sobre-nosotros.html" class="more"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                        <div class="bg-color"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- ==================== End Services ==================== -->
-
-
-
-    <!-- ==================== Start block-sec ==================== -->
-
-    <!-- <section class="block-sec">
-        <div class="background bg-img section-padding pb-0" data-background="img/slid/1.jpg" data-overlay-dark="8">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="vid-area">
-                            <div class="vid-icon">
-                                <a class="vid" href="https://vimeo.com/127203262">
-                                    <div class="vid-butn">
-                                        <span class="icon">
-                                            <i class="fas fa-play"></i>
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="cont">
-                                <h3 class="wow" data-splitting>Un breve resumen de nuestra metodología de trabajo.</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 offset-lg-1">
-                        <div class="testim-box">
-                            <div class="head-box">
-                                <h6 class="wow fadeIn" data-wow-delay=".5s">Clientes contentos</h6>
-                                <h4 class="wow fadeInLeft" data-wow-delay=".5s">Qué dicen nuestros clientes?</h4>
-                            </div>
-                            <div class="slic-item wow fadeInUp" data-wow-delay=".5s">
-                                <div class="item">
-                                    <p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh volutpat velit
-                                        class
-                                        aptent taciti sociosqu ad litora.</p>
-                                    <div class="info">
-                                        <div class="img">
-                                            <div class="img-box">
-                                                <img src="img/clients/1.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="cont">
-                                            <div class="author">
-                                                <h6 class="author-name custom-font">Melody Quinteros</h6>
-                                                <span class="author-details">Co-founder, Sonder Tango</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh volutpat velit
-                                        class
-                                        aptent taciti sociosqu ad litora.</p>
-                                    <div class="info">
-                                        <div class="img">
-                                            <div class="img-box">
-                                                <img src="img/clients/2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="cont">
-                                            <div class="author">
-                                                <h6 class="author-name custom-font">Alex Regelman</h6>
-                                                <span class="author-details">Co-founder, Tekohá Eco</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh volutpat velit
-                                        class
-                                        aptent taciti sociosqu ad litora.</p>
-                                    <div class="info">
-                                        <div class="img">
-                                            <div class="img-box">
-                                                <img src="img/clients/3.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="cont">
-                                            <div class="author">
-                                                <h6 class="author-name custom-font">Alex Regelman</h6>
-                                                <span class="author-details">Co-founder, Colabrio</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- ==================== End block-sec ==================== -->
-
-
-
-    <!-- ==================== Start Skills Circle ==================== -->
-
-    <!-- <section class="skills-circle sub-bg pt-50 pb-50">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7">
-                    <div class="">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="item wow fadeInLeft" data-wow-delay=".6">
-                                    <div class="skill" data-value="0.9">
-                                        <span class="custom-font">90%</span>
-                                    </div>
-                                    <div class="cont">
-                                        <span>Experiencia</span>
-                                        <h6>Backend</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="item wow fadeInLeft" data-wow-delay=".3">
-                                    <div class="skill" data-value="0.75">
-                                        <span class="custom-font">75%</span>
-                                    </div>
-                                    <div class="cont">
-                                        <span>Experiencia</span>
-                                        <h6>Wordpress</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- ==================== End Skills Circle ==================== -->
-
-
-
     <!-- ==================== Start works ==================== -->
 
-    <section class="portfolio section-padding pb-70">
-        <div class="container">
+    <section class="portfolio section-padding pb-70" id="portfoliohome">
+        <div class="container" >
             <div class="sec-head custom-font">
-                <h6>Portfolio</h6>
-                <h3>Nuestros trabajos.</h3>
+                <h6 id="titlePortfolio"></h6>
+                <h3 id="subtitlePortfolio"></h3>
                 <span class="tbg text-right">Portfolio</span>
             </div>
         </div>
@@ -423,10 +241,10 @@
                 <!-- filter links -->
                 <div class="filtering text-center col-12">
                     <div class="filter">
-                        <span data-filter='*' class="active">Todos</span>
-                        <span data-filter='.web'>Sitio web</span>
+                        <span data-filter='*' class="active" id="todos"></span>
+                        <span data-filter='.web' id="sitioweb"></span>
                         <span data-filter='.wp'>WordPress</span>
-                        <span data-filter='.app'>Aplicaciones</span>
+                        <span data-filter='.app' id="aplicaciones"></span>
                     </div>
                 </div>
 
@@ -441,7 +259,7 @@
                             </a>
                         </div>
                         <div class="cont">
-                            <h6>Aplicación Web | Gestor de turnos</h6>
+                            <h6 id="proyecto1"></h6>
                             <span>react js, javascript & mongo db</span>
                         </div>
                     </div>
@@ -455,7 +273,7 @@
                             </a>
                         </div>
                         <div class="cont">
-                            <h6>Ana Bauer | Fotografía</h6>
+                            <h6 id="proyecto2"></h6>
                             <span>react js & javascript</span>
                         </div>
                     </div>
@@ -469,7 +287,7 @@
                             </a>
                         </div>
                         <div class="cont">
-                            <h6>German Riesco | Arquitecto</h6>
+                            <h6 id="proyecto3"></h6>
                             <span>react js & javascript</span>
                         </div>
                     </div>
@@ -483,7 +301,7 @@
                             </a>
                         </div>
                         <div class="cont">
-                            <h6>Tekoha Eco | Ambiental</h6>
+                            <h6 id="proyecto4"></h6>
                             <span>wordpress</span>
                         </div>
                     </div>
@@ -497,7 +315,7 @@
                             </a>
                         </div>
                         <div class="cont">
-                            <h6>Sonder Tango | Orquesta</h6>
+                            <h6 id="proyecto5"></h6>
                             <span>wordpress</span>
                         </div>
                     </div>
@@ -511,7 +329,7 @@
                             </a>
                         </div>
                         <div class="cont">
-                            <h6>Pipa Producciones | Productora</h6>
+                            <h6 id="proyecto6"></h6>
                             <span><a href="#0">react js & javascript</a></span>
                         </div>
                     </div>
@@ -525,24 +343,10 @@
                             </a>
                         </div>
                         <div class="cont">
-                            <h6>Micelio | Agencia Digital</h6>
+                            <h6 id="proyecto7"></h6>
                             <span><a href="#0">wordpress</a></span>
                         </div>
                     </div>
-
-                    <!-- gallery item -->
-                    <!-- <div class="col-lg-4 col-md-6 items app fadeInUp" data-wow-delay=".4s">
-                        <div class="item-img">
-                            <a href="#0" class="imago wow">
-                                <img src="img/portfolio/mas/05.jpg" alt="image">
-                                <div class="item-img-overlay"></div>
-                            </a>
-                        </div>
-                        <div class="cont">
-                            <h6>Gestor de Turnos</h6>
-                            <span><a href="#0">Ver Demo, desarrollado con react js, javascript & mongo db</a></span>
-                        </div>
-                    </div> -->
 
                 </div>
 
@@ -553,112 +357,20 @@
     <!-- ==================== End works ==================== -->
 
 
-
-    <!-- ==================== Start clients Brands ==================== -->
-
-    <!-- <section class="clients section-padding sub-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 valign">
-                    <div class="sec-head custom-font mb-0">
-                        <h6>Clientes</h6>
-                        <h3>Nuestros <br> Clientes.</h3>
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                    <div>
-                        <div class="row bord">
-                            <div class="col-md-3 col-6 brands">
-                                <div class="item wow fadeIn" data-wow-delay=".3s">
-                                    <div class="img">
-                                        <img src="img/clients/brands/ana-bauer-brands.png" alt="Ana Bauer">
-                                        <a href="#0" class="link" data-splitting>anabauer.com.ar</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-6 brands">
-                                <div class="item wow fadeIn" data-wow-delay=".6s">
-                                    <div class="img">
-                                        <img src="img/clients/brands/german-riesco-brands.png" alt="German Riesco | Arquitecto">
-                                        <a href="#0" class="link" data-splitting>germanriesco.com</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-6 brands">
-                                <div class="item wow fadeIn" data-wow-delay=".8s">
-                                    <div class="img">
-                                        <img src="img/clients/brands/tekoha-eco-brands.png" alt="Tekohá Eco">
-                                        <a href="#0" class="link" data-splitting>tekoha.eco</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-6 brands">
-                                <div class="item wow fadeIn" data-wow-delay=".3s">
-                                    <div class="img">
-                                        <img src="img/clients/brands/04.png" alt="">
-                                        <a href="#0" class="link" data-splitting>sondertango.com</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-3 col-6 brands">
-                                <div class="item wow fadeIn" data-wow-delay=".4s">
-                                    <div class="img">
-                                        <img src="img/clients/brands/05.png" alt="">
-                                        <a href="#0" class="link" data-splitting>micelio.com</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-6 brands">
-                                <div class="item wow fadeIn" data-wow-delay=".7s">
-                                    <div class="img">
-                                        <img src="img/clients/brands/pipa-producciones-brands.png" alt="Pipa Producciones">
-                                        <a href="#0" class="link" data-splitting>pipaproducciones.com</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-6 brands">
-                                <div class="item wow fadeIn" data-wow-delay=".5s">
-                                    <div class="img">
-                                        <img src="img/clients/brands/07.png" alt="">
-                                        <a href="#0" class="link" data-splitting>próximamente</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-6 brands">
-                                <div class="item wow fadeIn" data-wow-delay=".3s">
-                                    <div class="img">
-                                        <img src="img/clients/brands/08.png" alt="">
-                                        <a href="#0" class="link" data-splitting>próximamente</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- ==================== End clients Brands ==================== -->
-
-
-
     <!-- ==================== Start call-to-action ==================== -->
 
-    <section class="call-action section-padding bg-img" data-background="img/pattern.png">
+    <section class="call-action section-padding bg-img" data-background="img/pattern.png" >
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-lg-9">
-                    <div class="content sm-mb30">
-                        <h6 class="wow" data-splitting>a solo un paso de</h6>
-                        <h2 class="wow custom-font" data-splitting>crear <b>tu proyecto</b>.</h2>
+                    <div class="content sm-mb30" id="contacthome">
+                        <h6 class="wow" data-splitting id="asolounpaso"></h6>
+                        <h2 class="wow custom-font" data-splitting id="crear"><b id="tuproyecto"></b></h2>
                     </div>
                 </div>
 
                 <div class="col-md-4 col-lg-3 valign">
-                    <a href="contacto.html" class="btn-curve btn-lit"><span>Contactanos</span></a>
+                    <a href="contacto.html" class="btn-curve btn-lit"><span id="contactanos"></span></a>
                 </div>
 
             </div>
@@ -671,7 +383,7 @@
 
     <!-- ==================== Start Footer ==================== -->
 
-    <footer class="footer-half sub-bg section-padding pb-0">
+    <footer class="footer-half sub-bg section-padding pb-0" id="contactfooter">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
@@ -684,13 +396,13 @@
                         <div class="con-info custom-font">
                             <ul>
                                 <li><span>Email : </span>mymwebdevelopers@gmail.com</li>
-                                <li><span>Ubicación : </span> Buenos Aires, Argentina.
+                                <li><span id="ubicacion"></span> Buenos Aires, Argentina.
                                 </li>
                                 <li><span>WhatsApp : </span> (+54) 9 11 6378 5934</li>
                             </ul>
                         </div>
                         <div class="social-icon">
-                            <h6 class="custom-font stit simple-btn">Seguinos</h6>
+                            <h6 class="custom-font stit simple-btn" id="seguinos"></h6>
                             <div class="social">
                                 <a href="https://www.instagram.com/mymdevelopers/" target="_blank" class="icon">
                                     <i class="fab fa-instagram"></i>
@@ -711,7 +423,7 @@
                         </form>
                     </div> -->
                     <div class="insta">
-                        <h6 class="custom-font stit simple-btn">Herramientas</h6>
+                        <h6 class="custom-font stit simple-btn" id="herramientas"></h6>
                         <div class="insta-gallary">
                             <a href="#0">
                                 <img src="img/insta/logo-react.png" alt="">
@@ -755,6 +467,8 @@
 
     <!-- custom scripts -->
     <script src="js/scripts.js"></script>
+
+    <script src="js/language.js"></script>
 
 </body>
 
