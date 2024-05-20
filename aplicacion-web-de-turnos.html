@@ -81,29 +81,26 @@
 
             <!-- navbar links -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto" id="navbar">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="sobre-nosotros.html">Sobre nosotros</a>
+                            <a class="nav-link" href="sobre-nosotros.html" id="sobrenosotros"></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="portfolio.html">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            <a class="nav-link" href="contacto.html" id="contacto"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="changeLanguage('es')" id="es"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="changeLanguage('en')" id="in"></a>
                         </li>
                 </ul>
-                <!-- <div class="search">
-                    <span class="icon pe-7s-search cursor-pointer"></span>
-                    <div class="search-form text-center custom-font">
-                        <form>
-                            <input type="text" name="search" placeholder="Search">
-                        </form>
-                        <span class="close pe-7s-close cursor-pointer"></span>
-                    </div>
-                </div> -->
             </div>
         </div>
     </nav>
@@ -113,7 +110,7 @@
 
     <!-- ==================== Start wrapper ==================== -->
 
-    <div class="wrapper">
+    <div class="wrapper" id="aplicaciones">
 
 
         <!-- ==================== Start Header ==================== -->
@@ -123,8 +120,8 @@
                 <div class="row">
                     <div class="col-lg-7 col-md-9">
                         <div class="cont">
-                            <h6>Aplicacion web.</h6>
-                            <h2>Administrador de turnos y servicios | Comercial.</h2>
+                            <h6 id="titleApp"></h6>
+                            <h2 id="descApp"></h2>
                         </div>
                     </div>
                 </div>
@@ -143,37 +140,38 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-4">
                         <div class="htit">
-                            <h4><span>01 </span> Introducción.</h4>
+                            <h4><span>01 </span></h4>
+                            <h4 id="introduccionA"></h4>
                         </div>
                     </div>
                     <div class="col-lg-8 offset-lg-1 col-md-8 mb-30">
                         <div class="text">
-                            <p class="extra-text">Accedé a la gestión integral de tu negocio desde la comodidad de tu dispositivo móvil. Con nuestra aplicación web podes crear servicios, gestionar turnos y clientes de manera eficiente y cómoda, <strong>desde tu teléfono</strong>. Simplificá tus tareas diarias y llevá el control de tu negocio, estés donde estés.</p>
+                            <p class="extra-text" id="textA"></p>
                         </div>
                     </div>
 
                     <div class="col-lg-3">
                         <div class="item mt-30">
-                            <h6>Cliente</h6>
+                            <h6 id="clienteA"></h6>
                             <p><a href="https://central-de-turnos-7hvn.vercel.app/" target="_blank">Link Demo</a></p>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="item mt-30">
-                            <h6>Fecha</h6>
-                            <p>Mayo 2024</p>
+                            <h6 id="fechaA"></h6>
+                            <p id="fechaA2"></p>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="item mt-30">
-                            <h6>Categoría</h6>
-                            <p>Aplicacion Web, Mongo DB, React Js & javascript</p>
+                            <h6 id="categoriaA"></h6>
+                            <p id="categoriaA2"></p>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="item mt-30">
                             <h6>Tags</h6>
-                            <p>Diseño, Minimalista, Moderno</p>
+                            <p id="tagsA"></p>
                         </div>
                     </div>
                 </div>
@@ -216,12 +214,13 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-4">
                         <div class="htit">
-                            <h4><span>02 </span> Herramientas.</h4>
+                            <h4><span>02 </span></h4>
+                            <h4 id="herramientasA"></h4>
                         </div>
                     </div>
                     <div class="col-lg-8 offset-lg-1 col-md-8 mb-30">
                         <div class="text">
-                            <p class="extra-text">Nuestra aplicación se desarrolló utilizando la pila MERN (MongoDB, Express, React y Node.js), una combinación poderosa que nos permitió crear una experiencia completa y dinámica para nuestros usuarios. Con MongoDB como base de datos flexible y escalable, Express para construir un backend robusto y eficiente, React para una interfaz de usuario interactiva y Node.js para un servidor rápido y receptivo, pudimos ofrecer un <strong>excepcionalmente rápido, confiable y fácil de mantener</strong>.</p>
+                            <p class="extra-text" id="herramientasTextA"></p>
                         </div>
                     </div>
                 </div>
@@ -229,30 +228,6 @@
         </section>
 
         <!-- ==================== End Intro ==================== -->
-
-
-
-
-        <!-- ==================== Start Video-wrapper ==================== -->
-
-        <!-- <section>
-            <div class="container-fluid">
-                <div class="video-wrapper section-padding bg-img parallaxie valign"
-                    data-background="img/portfolio/project1/bg.jpg" data-overlay-dark="4">
-                    <div class="full-width text-center">
-                        <a class="vid" href="https://vimeo.com/127203262">
-                            <div class="vid-butn">
-                                <span class="icon">
-                                    <i class="fas fa-play"></i>
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-        <!-- ==================== End Video-wrapper ==================== -->
 
 
 
@@ -269,7 +244,7 @@
                                     <div class="o-hidden full-width">
                                         <h1>
                                             <a href="ana-bauer-fotografa-filmmaker.html">
-                                                <div class="stroke">Siguiente proyecto</div>
+                                                <div class="stroke" id="siguienteProyecto"></div>
                                             </a>
                                         </h1>
                                     </div>
@@ -278,7 +253,7 @@
                                     <div class="cap full-width">
                                         <h1>
                                             <a href="ana-bauer-fotografa-filmmaker.html">
-                                                <span>Siguiente proyecto</span>
+                                                <span id="siguienteProyecto"></span>
                                             </a>
                                         </h1>
                                     </div>
@@ -326,7 +301,7 @@
 
     <!-- custom scripts -->
     <script src="js/scripts.js"></script>
-
+    <script src="js/language-aplicaciones.js"></script>
 </body>
 
 </html>
