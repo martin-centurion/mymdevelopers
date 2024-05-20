@@ -82,29 +82,26 @@
 
             <!-- navbar links -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto" id="navbar">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="sobre-nosotros.html">Sobre nosotros</a>
+                            <a class="nav-link" href="sobre-nosotros.html" id="sobrenosotros"></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="portfolio.html">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            <a class="nav-link" href="contacto.html" id="contacto"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="changeLanguage('es')" id="es"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="changeLanguage('en')" id="in"></a>
                         </li>
                 </ul>
-                <!-- <div class="search">
-                    <span class="icon pe-7s-search cursor-pointer"></span>
-                    <div class="search-form text-center custom-font">
-                        <form>
-                            <input type="text" name="search" placeholder="Search">
-                        </form>
-                        <span class="close pe-7s-close cursor-pointer"></span>
-                    </div>
-                </div> -->
             </div>
         </div>
     </nav>
@@ -114,7 +111,7 @@
 
     <!-- ==================== Start wrapper ==================== -->
 
-    <div class="wrapper">
+    <div class="wrapper" id="sondertango">
 
 
         <!-- ==================== Start Header ==================== -->
@@ -122,10 +119,10 @@
         <section class="page-header proj-det">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-7 col-md-9">
+                    <div class="col-lg-7 col-md-9" >
                         <div class="cont">
-                            <h6>Tienda Online.</h6>
-                            <h2>Sonder Tango | Orquesta.</h2>
+                            <h6 id="titleSonderTango"></h6>
+                            <h2 id="descSonderTango"></h2>
                         </div>
                     </div>
                 </div>
@@ -144,37 +141,38 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-4">
                         <div class="htit">
-                            <h4><span>01 </span> Introducción</h4>
+                            <h4><span>01 </span></h4>
+                            <h4 id="introduccionST"></h4>
                         </div>
                     </div>
                     <div class="col-lg-8 offset-lg-1 col-md-8 mb-30">
                         <div class="text">
-                            <p class="extra-text">Explorá la magia del tango argentino en las encantadoras calles de Europa a través de nuestro sitio web. Desde la compra de tickets y merchandising hasta la descarga de música exclusiva, nuestro sitio ofrece una experiencia completa para los amantes del tango. Además, el sitio ofrece un calendario interactivo para que los usuarios puedan acceder rápidamente a las fechas y lugares de conciertos en vivo.</p>
+                            <p class="extra-text" id="textST"></p>
                         </div>
                     </div>
 
                     <div class="col-lg-3">
                         <div class="item mt-30">
-                            <h6>Cliente</h6>
+                            <h6 id="clienteST"></h6>
                             <p><a href="https://www.sondertango.com" target="_blank">sondertango.com</a></p>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="item mt-30">
-                            <h6>Fecha</h6>
-                            <p>Marzo 2024</p>
+                            <h6 id="fechaST"></h6>
+                            <p id="fechaST2"></p>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="item mt-30">
-                            <h6>Categoría</h6>
-                            <p>Tienda Online, WordPress</p>
+                            <h6 id="categoriaST"></h6>
+                            <p id="categoriaST2"></p>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="item mt-30">
                             <h6>Tags</h6>
-                            <p>Diseño, Tienda, Moderno</p>
+                            <p id="tagsST"></p>
                         </div>
                     </div>
                 </div>
@@ -220,12 +218,13 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-4">
                         <div class="htit">
-                            <h4><span>02 </span> Herramientas.</h4>
+                            <h4><span>02 </span></h4>
+                            <h4 id="herramientasST"></h4>
                         </div>
                     </div>
                     <div class="col-lg-8 offset-lg-1 col-md-8 mb-30">
                         <div class="text">
-                            <p class="extra-text">Utilizamos WordPress para crear un sitio web flexible y fácil de gestionar, permitiendo una administración eficiente del contenido. Por otro lado, Figma nos brindó la capacidad de diseñar prototipos y maquetas de manera colaborativa, asegurando una experiencia visualmente impactante y coherente.</p>
+                            <p class="extra-text" id="herramientasTextST"></p>
                         </div>
                     </div>
                 </div>
@@ -233,32 +232,6 @@
         </section>
 
         <!-- ==================== End Intro ==================== -->
-
-
-
-
-        <!-- ==================== Start Video-wrapper ==================== -->
-
-        <!-- <section>
-            <div class="container-fluid">
-                <div class="video-wrapper section-padding bg-img parallaxie valign"
-                    data-background="img/portfolio/project1/bg.jpg" data-overlay-dark="4">
-                    <div class="full-width text-center">
-                        <a class="vid" href="https://vimeo.com/127203262">
-                            <div class="vid-butn">
-                                <span class="icon">
-                                    <i class="fas fa-play"></i>
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-        <!-- ==================== End Video-wrapper ==================== -->
-
-
 
 
         <!-- ==================== Start next-prog ==================== -->
@@ -273,7 +246,7 @@
                                     <div class="o-hidden full-width">
                                         <h1>
                                             <a href="tekoha-eco.html">
-                                                <div class="stroke">Siguiente proyecto</div>
+                                                <div class="stroke" id="siguienteProyecto"></div>
                                             </a>
                                         </h1>
                                     </div>
@@ -282,7 +255,7 @@
                                     <div class="cap full-width">
                                         <h1>
                                             <a href="tekoha-eco.html">
-                                                <span>Siguiente proyecto</span>
+                                                <span id="siguienteProyecto"></span>
                                             </a>
                                         </h1>
                                     </div>
@@ -330,6 +303,7 @@
 
     <!-- custom scripts -->
     <script src="js/scripts.js"></script>
+    <script src="js/language-sonder-tango.js"></script>
 
 </body>
 
