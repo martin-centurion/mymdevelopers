@@ -63,7 +63,7 @@ const title1 = {
 const equipo = {
     es: {
         titlestaff: "Nuestro equipo",
-        descriptionstaff: "Programador Full Stack",
+        descriptionstaff: "Programadora Full Stack",
         descriptionstaffdos: "Programador Full Stack"
     },
     en: {

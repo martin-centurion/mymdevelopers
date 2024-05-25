@@ -24,12 +24,12 @@ const navbar = {
 const banner = {
     es: {
         text1: "Tienda Online",
-        text2: "Diseño personalizado, integración de pagos y soporte 24/7.",
+        text2: "Desarrollamos tiendas ecommerce modernas para pequeñas y grandes empresas.",
         contact: "Contactanos"
     },
     en: {
         text1: "Shop Online",
-        text2: "Custom design, payment integration, and 24/7 support.",
+        text2: "We develop modern ecommerce stores for small and large companies.",
         contact: "Contact Us"
     }
 }
@@ -37,12 +37,12 @@ const banner = {
 const bannerdos = {
     es: {
         text1a: "Diseño Web",
-        text2a: "Transforma tu presencia digital con diseño web profesional. Sitios web personalizados, optimización SEO y soporte continuo. ¡Haz que tu marca destaque hoy mismo!",
+        text2a: "Transforma tu presencia digital con un sitio web profesional!",
         contacta: "Contactanos"
     },
     en: {
         text1a: "Web Design",
-        text2a: "Transform your digital presence with professional web design. Custom websites, SEO optimization, and continuous support. Make your brand stand out today!",
+        text2a: "Transform your digital presence with professional web design!",
         contacta: "Contact Us"
     }
 }
