@@ -45,7 +45,8 @@ const portfoliohome = {
         proyecto4: "Tekohá Eco | Organización Ambiental.",
         proyecto5: "Sonder Tango | Orquesta",
         proyecto6: "Pipa Producciones | Productora",
-        proyecto7: "Micelio | Agencia Digital"
+        proyecto7: "Micelio | Agencia Digital",
+        proyecto8: "FutFemGol | Portal de Noticias Deportivas"
     },
     en: {
         titlePortfolio: "Portfolio",
@@ -59,7 +60,8 @@ const portfoliohome = {
         proyecto4: "Tekohá Eco | Environmental Organization.",
         proyecto5: "Sonder Tango | Orchestra",
         proyecto6: "Pipa Producciones | Producer",
-        proyecto7: "Mycelio | Digital Agency"
+        proyecto7: "Mycelio | Digital Agency",
+        proyecto8: "FutFemGol | Sports News"
     }
 }
 
@@ -178,6 +180,7 @@ function changeLanguage(lang) {
     document.getElementById('proyecto5').innerText = portfoliohome[lang].proyecto5;
     document.getElementById('proyecto6').innerText = portfoliohome[lang].proyecto6;
     document.getElementById('proyecto7').innerText = portfoliohome[lang].proyecto7;
+    document.getElementById('proyecto8').innerText = portfoliohome[lang].proyecto8;
     document.getElementById('asolounpaso').innerText = contacthome[lang].asolounpaso;
     document.getElementById('crear').innerText = contacthome[lang].crear;
     document.getElementById('contactanos').innerText = contacthome[lang].contactanos;

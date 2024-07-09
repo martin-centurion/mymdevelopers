@@ -23,40 +23,40 @@ const navbar = {
 
 const banner = {
     es: {
-        text1: "Tienda Online",
-        text2: "Desarrollamos tiendas ecommerce modernas para pequeñas y grandes empresas.",
-        contact: "Contactanos"
+        text1: "¿Listo para un sitio web que impresione?",
+        text2: "Contáctanos y transforma tu presencia online.",
+        contact: "WhatsApp"
     },
     en: {
-        text1: "Shop Online",
-        text2: "We develop modern ecommerce stores for small and large companies.",
-        contact: "Contact Us"
+        text1: "Ready for a website that impresses?",
+        text2: "Contact us and transform your online presence.",
+        contact: "WhatsApp"
     }
 }
 
 const bannerdos = {
     es: {
-        text1a: "Diseño Web",
+        text1a: "Diseño de sitios web innovadores para tu negocio!",
         text2a: "Transforma tu presencia digital con un sitio web profesional!",
-        contacta: "Contactanos"
+        contacta: "WhatsApp"
     },
     en: {
-        text1a: "Web Design",
-        text2a: "Transform your digital presence with professional web design!",
-        contacta: "Contact Us"
+        text1a: "Innovative website design for your business!",
+        text2a: "Transform your digital presence with a professional website!",
+        contacta: "WhatsApp"
     }
 }
 
 const bannertres = {
     es: {
-        text1b: "Desarrollo de App",
-        text2b: "Desarrollamos aplicaciones a medida para impulsar tu negocio. Innovación, funcionalidad y soporte continuo. ¡Lleva tus ideas al siguiente nivel!",
-        contactb: "Contactanos"
+        text1b: "Diseños modernos y funcionales.",
+        text2b: "Llevamos tu marca al siguiente nivel.",
+        contactb: "WhatsApp"
     },
     en: {
-        text1b: "app development",
-        text2b: "We develop custom applications to boost your business. Innovation, functionality, and continuous support. Take your ideas to the next level!",
-        contactb: "Contact Us"
+        text1b: "Modern and functional designs.",
+        text2b: "We take your brand to the next level.",
+        contactb: "WhatsApp"
     }
 }
 
@@ -92,7 +92,8 @@ const portfoliohome = {
         proyecto4: "Tekohá Eco | Organización Ambiental.",
         proyecto5: "Sonder Tango | Orquesta",
         proyecto6: "Pipa Producciones | Productora",
-        proyecto7: "Micelio | Agencia Digital"
+        proyecto7: "Micelio | Agencia Digital",
+        proyecto8: "FutFemGol | Noticias Deportivas"
     },
     en: {
         titlePortfolio: "Portfolio",
@@ -106,7 +107,8 @@ const portfoliohome = {
         proyecto4: "Tekohá Eco | Environmental Organization.",
         proyecto5: "Sonder Tango | Orchestra",
         proyecto6: "Pipa Producciones | Producer",
-        proyecto7: "Mycelio | Digital Agency"
+        proyecto7: "Mycelio | Digital Agency",
+        proyecto8: "FutFemGol | Sports News"
     }
 }
 
@@ -195,6 +197,7 @@ function changeLanguage(lang) {
     document.getElementById('proyecto5').innerText = portfoliohome[lang].proyecto5;
     document.getElementById('proyecto6').innerText = portfoliohome[lang].proyecto6;
     document.getElementById('proyecto7').innerText = portfoliohome[lang].proyecto7;
+    document.getElementById('proyecto8').innerText = portfoliohome[lang].proyecto8;
     document.getElementById('asolounpaso').innerText = contacthome[lang].asolounpaso;
     document.getElementById('crear').innerText = contacthome[lang].crear;
     document.getElementById('contactanos').innerText = contacthome[lang].contactanos;
