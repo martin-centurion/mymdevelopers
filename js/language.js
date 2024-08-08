@@ -93,7 +93,8 @@ const portfoliohome = {
         proyecto5: "Sonder Tango | Orquesta",
         proyecto6: "Pipa Producciones | Productora",
         proyecto7: "Micelio | Agencia Digital",
-        proyecto8: "FutFemGol | Noticias Deportivas"
+        proyecto8: "FutFemGol | Noticias Deportivas",
+        proyecto9: "SCR Consulting | Consultora"
     },
     en: {
         titlePortfolio: "Portfolio",
@@ -108,7 +109,8 @@ const portfoliohome = {
         proyecto5: "Sonder Tango | Orchestra",
         proyecto6: "Pipa Producciones | Producer",
         proyecto7: "Mycelio | Digital Agency",
-        proyecto8: "FutFemGol | Sports News"
+        proyecto8: "FutFemGol | Sports News",
+        proyecto9: "SCR Consulting | Consulting"
     }
 }
 
@@ -198,6 +200,7 @@ function changeLanguage(lang) {
     document.getElementById('proyecto6').innerText = portfoliohome[lang].proyecto6;
     document.getElementById('proyecto7').innerText = portfoliohome[lang].proyecto7;
     document.getElementById('proyecto8').innerText = portfoliohome[lang].proyecto8;
+    document.getElementById('proyecto9').innerText = portfoliohome[lang].proyecto9;
     document.getElementById('asolounpaso').innerText = contacthome[lang].asolounpaso;
     document.getElementById('crear').innerText = contacthome[lang].crear;
     document.getElementById('contactanos').innerText = contacthome[lang].contactanos;
