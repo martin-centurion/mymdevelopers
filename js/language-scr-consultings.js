@@ -18,7 +18,7 @@ const micelio = {
         titleMicelio: "Sitio Web",
         descMicelio: "Scr Consulting | Consultora",
         introduccionMicelio: "Introducción",
-        textMicelio: "Desarrollamos un sitio web moderno y funcional que refleja la identidad de la agencia y sus servicios. El objetivo principal fue crear una plataforma intuitiva y visualmente atractiva que mejore la experiencia del usuario y aumente las conversiones.",
+        textMicelio: "SCR Consulting es una firma especializada en la implementación de soluciones tecnológicas avanzadas para empresas que buscan optimizar sus operaciones y mejorar su competitividad en un entorno empresarial en constante evolución. Nuestro enfoque está basado en la integración de sistemas de vanguardia, la automatización de procesos y la gestión eficiente de recursos tecnológicos.",
         clienteMicelio: "Cliente",
         fechaMicelio: "Fecha",
         fechaMicelio2: "Agosto 2024",
@@ -26,14 +26,14 @@ const micelio = {
         categoriaMicelio2: "WORDPRESS",
         tagsMicelio: "Diseño, Minimalista, Moderno",
         herramientasMicelio: "Herramientas.",
-        herramientasTextMicelio: "Para este proyecto, utilizamos Figma para el diseño y WordPress para el desarrollo, asegurando un rendimiento óptimo y una experiencia de usuario fluida. También implementamos herramientas de SEO para mejorar la visibilidad del sitio en los motores de búsqueda.",
+        herramientasTextMicelio: "El sitio web de SCR Consulting fue desarrollado en WordPress e integra funcionalidades como newsletter, bolsa de trabajo y calendario de eventos para optimizar la interacción y gestión de usuarios.",
         siguienteProyecto: "Siguiente Proyecto"
     },
     en: {
         titleMicelio: "Website",
         descMicelio: "Scr Consulting | Consulting",
         introduccionMicelio: "Introduction",
-        textMicelio: "We develop a modern and functional website that reflects the identity of the agency and its services. The main goal was to create an intuitive and visually appealing platform that improves user experience and increases conversions.",
+        textMicelio: "SCR Consulting is a firm specialized in the implementation of advanced technological solutions for companies seeking to optimize their operations and improve their competitiveness in a constantly evolving business environment. Our approach is based on the integration of cutting-edge systems, process automation and efficient management of technological resources.",
         clienteMicelio: "Client",
         fechaMicelio: "Date",
         fechaMicelio2: "August 2024",
@@ -41,7 +41,7 @@ const micelio = {
         categoriaMicelio2: "WORDPRESS",
         tagsMicelio: "Design, Minimalist, Modern",
         herramientasMicelio: "Tools.",
-        herramientasTextMicelio: "For this project, we used Figma for design and WordPress for development, ensuring optimal performance and a smooth user experience. We also implement SEO tools to improve the site's visibility in search engines.",
+        herramientasTextMicelio: "The SCR Consulting website was developed in WordPress and integrates functionalities such as newsletter, job board and events calendar to optimize user interaction and management.",
         siguienteProyecto: "Next Project"
     }
 }
