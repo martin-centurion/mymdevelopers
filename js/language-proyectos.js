@@ -2,14 +2,14 @@
         es: {
             sobrenosotros: "Sobre Nosotros",
             contacto: "Contacto",
-            es: "ES",
-            in: "EN"
+            es: "ES 🇪🇸",
+            in: "EN 🇬🇧"
         },
         en: {
             sobrenosotros: "About Us",
             contacto: "Contact",
-            es: "SP",
-            in: "EN"
+            es: "SP 🇪🇸",
+            in: "EN 🇬🇧"
         }
     }
 
