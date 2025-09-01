@@ -1246,7 +1246,7 @@ ul.sub-menu li a {
 }
 .menuBar-toggle svg,
 .menuBar-toggle i {
-  color: var(--color-primary);
+  color: white;
   width: 40px;
   height: 35px;
 }
