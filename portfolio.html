@@ -29,6 +29,147 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
+  <!-- === WhatsApp CTA - Hablemos! (copiar y pegar) === -->
+  <style>
+    :root {
+      --wapp-gap: 18px; /* separación al borde */
+      --wapp-bg: #25d366; /* color de fondo */
+      --wapp-fg: #ffffff; /* color de texto */
+    }
+
+    /* Base */
+    .wapp-float {
+      position: fixed;
+      right: var(--wapp-gap);
+      bottom: var(--wapp-gap);
+      z-index: 9999;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.78rem 1.05rem;
+      border-radius: 9999px;
+      background: var(--wapp-bg);
+      color: var(--wapp-fg);
+      text-decoration: none;
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: 0.2px;
+      box-shadow: 0 10px 24px rgba(37, 211, 102, 0.35),
+        0 0 0 1px rgba(0, 0, 0, 0.02);
+      -webkit-tap-highlight-color: transparent;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .wapp-float:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 14px 28px rgba(37, 211, 102, 0.45);
+    }
+    .wapp-float span {
+      white-space: nowrap;
+      font-size: 16px;
+    }
+
+    /* Animaciones principales */
+    .is-animated {
+      animation: wapp-pop 0.55s cubic-bezier(0.2, 0.8, 0.2, 1) 0s 1,
+        wapp-breathe 3.6s ease-in-out 1.1s infinite,
+        wapp-glow 3.6s ease-in-out 1.1s infinite;
+    }
+
+    @keyframes wapp-pop {
+      0% {
+        transform: translateY(12px) scale(0.92);
+        opacity: 0;
+      }
+      60% {
+        transform: translateY(0) scale(1.06);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+    }
+    @keyframes wapp-breathe {
+      0%,
+      100% {
+        transform: translateY(0) scale(1);
+      }
+      50% {
+        transform: translateY(0) scale(1.03);
+      }
+    }
+    @keyframes wapp-glow {
+      0%,
+      100% {
+        box-shadow: 0 10px 24px rgba(37, 211, 102, 0.35),
+          0 0 0 1px rgba(0, 0, 0, 0.02);
+      }
+      50% {
+        box-shadow: 0 16px 36px rgba(37, 211, 102, 0.55),
+          0 0 0 1px rgba(0, 0, 0, 0.02);
+      }
+    }
+
+    /* Variante opcional: halo "ping" (agregar clase .ping al <a>) */
+    .wapp-float.ping::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      pointer-events: none;
+      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.35);
+      animation: wapp-ping 5s ease-out 2s infinite;
+    }
+    @keyframes wapp-ping {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.35);
+        opacity: 1;
+      }
+      70% {
+        transform: scale(1.6);
+        box-shadow: 0 0 0 18px rgba(37, 211, 102, 0);
+        opacity: 0;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+    /* Respeta usuarios con reducción de movimiento */
+    @media (prefers-reduced-motion: reduce) {
+      .is-animated {
+        animation: none;
+      }
+      .wapp-float.ping::after {
+        animation: none;
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 480px) {
+      .wapp-float {
+        right: 14px;
+        bottom: 14px;
+        padding: 0.68rem 0.95rem;
+      }
+      .wapp-float span {
+        font-size: 15px;
+      }
+    }
+  </style>
+
+  <a
+    class="wapp-float is-animated ping"
+    href="https://wa.me/5491163785934?text=Hola%20MyM%20Developers%2C%20vengo%20desde%20la%20web%20y%20necesito%20asesor%C3%ADa."
+    target="_blank"
+    rel="noopener"
+    aria-label="Chatear por WhatsApp con MyM Developers"
+  >
+    <span>Hablemos!</span>
+  </a>
+  <!-- === /WhatsApp CTA === -->
+
   <body>
     <!-- Custom Cursor -->
 
