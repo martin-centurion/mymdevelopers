@@ -1,6 +1,31 @@
 (function ($) {
   "use strict";
 
+  // Vercel Web Analytics (plain HTML integration).
+  // Uses the legacy insights path for broad compatibility in static sites.
+  (function initVercelAnalytics() {
+    if (typeof window === "undefined" || typeof document === "undefined") return;
+    if (
+      window.location.hostname === "localhost" ||
+      window.location.hostname === "127.0.0.1"
+    ) {
+      return;
+    }
+    if (document.querySelector('script[data-vercel-analytics="true"]')) return;
+
+    window.va =
+      window.va ||
+      function () {
+        (window.vaq = window.vaq || []).push(arguments);
+      };
+
+    var script = document.createElement("script");
+    script.defer = true;
+    script.src = "/_vercel/insights/script.js";
+    script.setAttribute("data-vercel-analytics", "true");
+    document.head.appendChild(script);
+  })();
+
   ///////////////////////////////////////////////////////
   // Preloader
   $(".preloader").delay(800).fadeOut("slow");
