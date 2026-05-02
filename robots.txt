@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /nosotros.html
+Disallow: /nosotros-en.html
 
 Sitemap: https://mymdevelopers.com.ar/sitemap.xml

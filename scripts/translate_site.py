@@ -15,7 +15,6 @@ PROPER_NOUNS = {
 MENU_TEXT_OVERRIDES = {
     "index.html": "Home",
     "portfolio.html": "Portfolio",
-    "nosotros.html": "About Us",
     "contacto.html": "Contact",
 }
 MENU_TEXT_OVERRIDES.update(

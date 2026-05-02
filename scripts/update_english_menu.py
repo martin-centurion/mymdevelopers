@@ -4,14 +4,12 @@ from bs4 import BeautifulSoup
 NAV_ITEMS = [
     ("index-en.html", "Home"),
     ("portfolio-en.html", "Portfolio"),
-    ("nosotros-en.html", "About Us"),
     ("contacto-en.html", "Contact"),
 ]
 
 SPANISH_MAP = {
     "index-en.html": "index.html",
     "portfolio-en.html": "portfolio.html",
-    "nosotros-en.html": "nosotros.html",
     "contacto-en.html": "contacto.html",
 }
 

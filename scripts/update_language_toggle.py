@@ -4,7 +4,6 @@ from bs4 import BeautifulSoup, Comment
 EN_NAV_LABELS = {
     "index-en.html": "Home",
     "portfolio-en.html": "Portfolio",
-    "nosotros-en.html": "About Us",
     "contacto-en.html": "Contact",
 }
 
